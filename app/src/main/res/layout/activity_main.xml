@@ -4,15 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/btn_Selective"
+        android:layout_width="280dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="64dp"
+        android:text="@string/button_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_All"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/button_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ImageTable"
+        android:layout_width="371dp"
+        android:layout_height="435dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_All"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707"
+        app:srcCompat="@drawable/tablitsaumnozheniya" />
+
+    <EditText
+        android:id="@+id/InputNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/hintTextView"
+        android:inputType="numberSigned"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Selective"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_All" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

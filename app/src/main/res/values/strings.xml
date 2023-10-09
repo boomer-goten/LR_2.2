@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="button_1">Упражнение для всех чисел</string>
+    <string name="button_2">Упражнение выборочно</string>
+    <string name="hintTextView">Введите число 2-9</string>>
+    <string name="errorTextView">Поле заполнено неверно</string>>
+    <string name="hintAnswerSelect">Введите ответ</string>>
+    <string name="AnswerSelection">Отправить ответ</string>>
+    <string name="Exercise">Решите пример\n%d * %d</string>
+    <string name="Correct">Верный ответ</string>>
+    <string name="Incorrect">Неверный ответ</string>>
+    <string name="PercentAnswer">Ответы %d/%d %d%%</string>>
 </resources>
